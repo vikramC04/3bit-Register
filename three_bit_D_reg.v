@@ -4,7 +4,7 @@ module three_bit_D_reg (SW, LEDR, KEY);
 	output [9:0] LEDR;
 	wire b3, b2, b1, Button;
 	wire [2:0] D;
-   wire [2:0] Q;
+        wire [2:0] Q;
 	assign Button = KEY[0];	
 	assign Resetn = KEY[1];ii
 	
