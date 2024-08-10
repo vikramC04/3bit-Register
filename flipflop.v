@@ -6,9 +6,6 @@ module flipflop (KEY, LEDR, SW);
 	
 	assign D = SW[9];
 	assign Clock = KEY[0] & KEY[1] & KEY[2] & KEY[3];
-
-	
-	
 	dflipflop name (D, Clock, Q);
 	
 	assign LEDR[9] = Q;
